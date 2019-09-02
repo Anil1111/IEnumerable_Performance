@@ -1,6 +1,7 @@
-# IEnumerable_Performance
-# Sends All Data 
+# IQuerable_Performance
+# Sends filtered Data 
 SELECT 
+   SELECT 
     [Extent1].[EmployeeID] AS [EmployeeID], 
     [Extent1].[LastName] AS [LastName], 
     [Extent1].[FirstName] AS [FirstName], 
@@ -20,4 +21,4 @@ SELECT
     [Extent1].[ReportsTo] AS [ReportsTo], 
     [Extent1].[PhotoPath] AS [PhotoPath]
     FROM [dbo].[Employees] AS [Extent1]
-
+    WHERE 5 = [Extent1].[EmployeeID]
