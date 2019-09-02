@@ -12,7 +12,7 @@ namespace IEnumerableAndIQuerable
         {
             NorthwindEntities ent = new NorthwindEntities();
             IQueryable<Employee> emp = ent.Employees;
-            IEnumerable<Employee> temp = emp.Where(x => x.EmployeeID  == 5);
+            IQueryable<Employee> temp = emp.Where(x => x.EmployeeID  == 5);
 
             foreach(var x in temp)
 
